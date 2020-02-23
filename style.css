@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  background-image:url('./img/shop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.items{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 10rem;
+  height: 7rem;
+  margin: 1rem 2rem;
+  border: 4px solid #53a74b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: monospace;
+  background: #85f5ebda;
+  font-weight: bold;
+}
+.card img{
+  height: 30px;
+}
+.details{
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0.5rem;
+}
+
+
+.card h4{
+  align-self: center;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.card button{
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: lightcoral;
+  border: none;
+}
+
+.card button:hover{
+  color: #e44c4c;
+  background-color: #fdfdfd;
+}
+
+.section{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+#totalCard{
+  display: none;
+}
+.total-card{
+  width: 17rem;
+  height: 12rem;
+  margin: 1rem 5rem 7rem 2rem;
+  border: 4px solid #53a74b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: monospace;
+  background: #85f5ebda;
+  align-self: flex-end;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.total-card::-webkit-scrollbar{
+  width: 0 !important
+}
+
+.total-card ul{
+  margin: 0.5rem;
+  list-style: none;
+}
+.total-card li{
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+  .body{
+    height: 100%;
+    width: 100%;
+  }
+
+  .items{
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    height: 90vh;
+  }
+  .card{
+    height: 6rem;
+    width: 9rem;
+    margin: 1rem 0
+  }
+
+  #totalCard{
+    display: block;
+  }
+  .total-card{
+    display: none;
+  }
+
+  .card img{
+    height: 30px;
+  }
+}
