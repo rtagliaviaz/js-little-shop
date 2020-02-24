@@ -63,14 +63,13 @@ body{
 
 .section{
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 }
-
 
 #totalCard{
   display: none;
 }
+
 .total-card{
   width: 17rem;
   height: 12rem;
@@ -85,12 +84,17 @@ body{
   background: #85f5ebda;
   align-self: flex-end;
   overflow: hidden;
-  overflow-y: scroll;
 }
 .total-card::-webkit-scrollbar{
-  width: 0 !important
+  width: 6px !important;
+  background-color: lightcoral
 }
-
+.total-card::-webkit-scrollbar-thumb {
+  background: white; 
+}
+.total-card:hover{
+  overflow-y: scroll;
+}
 .total-card ul{
   margin: 0.5rem;
   list-style: none;
@@ -100,6 +104,7 @@ body{
   font-weight: bold;
   text-align: left;
 }
+
 
 @media screen and (max-width: 700px) {
   .body{

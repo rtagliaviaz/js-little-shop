@@ -38,14 +38,11 @@ for (let i = 0; i < boton.length; i++) {
 
 
 getTotal = () => {
-  var sum = precios.reduce( function(tot, amount){
+  var sum = precios.reduce(function(tot, amount){
     return tot + amount
   });
   total.innerHTML = sum.toString()+'$'
   totala.innerHTML = sum.toString()+'$'
 }
-
-
-
 
 
